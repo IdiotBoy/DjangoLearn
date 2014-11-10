@@ -1,3 +1,6 @@
-<h1>
 hello {{uname}}
-</h1>
+
+{% for e in emps %}
+<div>{{forloop.counter}} {{e}}</div>
+{% endfor %}
+<div>共有记录 {{emps.count}} 条</div>
