@@ -1,0 +1,23 @@
+<!--
+<form method="post" action="">
+	{{form.as_p}}
+  <input type='submit' value="submit"/>
+</form>
+-->
+
+<form method="post" action="">
+  <div class="fieldWrapper">
+    {% if form.name.errors %} name 有错 {% endif %}
+    {{ form.name.errors }}
+    <label for="{{ form.name.id_for_label }}">name:</label>
+    {{ form.name }} {{form.cleaned_data.name}}
+  </div>
+
+  <div class="fieldWrapper">
+    {% if form.author.errors %} author 有错 {% endif %}
+    {{ form.author.errors }}
+    <label for="{{ form.author.id_for_label }}">author:</label>
+    {{ form.author }}
+  </div>
+  <input type='submit' value="submit"/>
+</form>

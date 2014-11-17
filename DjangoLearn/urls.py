@@ -38,4 +38,10 @@ urlpatterns = patterns('',
     url(r'^user/login/$', 'django_user.views.login_v'),
     url(r'^user/logout/$', 'django_user.views.logout_v'),
     url(r'^user/$', 'django_user.views.index'),
+
+
+    url(r'^mf/author$', 'model_form.views.author'),
+    url(r'^mf/book$', 'model_form.views.book'),
+    url(r'^mf/view_author$', 'model_form.views.view_author'),
+    url(r'^mf/view_book$', 'model_form.views.view_book'),
 )

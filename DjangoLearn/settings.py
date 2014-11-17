@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'online',
     'online2',
     'django_user',
+    'model_form',
 )
 
 MIDDLEWARE_CLASSES = (
