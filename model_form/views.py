@@ -7,7 +7,9 @@ def author(req):
 	if (req.method == 'POST'):
 		form = AuthorForm(req.POST)
 		if form.is_valid():
-			form.save()
+			author = form.save(commit=False)
+			author.id=10
+			author.save()
 			return HttpResponse('OK')
 	else:
 		form = AuthorForm()

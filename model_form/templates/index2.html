@@ -14,10 +14,18 @@
   </div>
 
   <div class="fieldWrapper">
-    {% if form.author.errors %} author 有错 {% endif %}
-    {{ form.author.errors }}
-    <label for="{{ form.author.id_for_label }}">author:</label>
-    {{ form.author }}
+    {% if form.title.errors %} author 有错 {% endif %}
+    {{ form.title.errors }}
+    <label for="{{ form.author.id_for_label }}">title:</label>
+    {{ form.title }}
   </div>
+
+  <div class="fieldWrapper">
+    {% if form.birth_date.errors %} author 有错 {% endif %}
+    {{ form.birth_date.errors }}
+    <label for="{{ form.author.id_for_label }}">birth_date:</label>
+    {{ form.birth_date }}
+  </div>
+
   <input type='submit' value="submit"/>
 </form>
